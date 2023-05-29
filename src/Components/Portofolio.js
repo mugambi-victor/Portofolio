@@ -2,6 +2,9 @@ import React from 'react';
 import { styled } from 'styled-components';
 import ServicesCard from"./ServicesCard";
 import SecondaryButton from"./SecondaryButton";
+import uni from "../img/uni.png";
+import pry from "../img/pry.png";
+import porto from "../img/porto.png";
 function Portofolio(){
     return(
         <StyledPortofolio>
@@ -15,30 +18,37 @@ function Portofolio(){
             
                 <ServicesCard className='myclass'>
                     <div className="s2">
-                        <center><h3>University Student Information System</h3></center>
+                        <center><h3 style={h33}>University Student Information System</h3></center>
+                        <img src={uni} alt='uni' style={imgs}></img>
                         <p className='body'>
                            A project created for college and universities to help manage student data easily reducing paperwork and increasing efficiency in the process.
                         </p>
                         <p className='body'>
                         This project provides portals for all skaholders involved in a school setting. i.e The school Admin, Students, Accountant and Parents, who can access the system to perform different tasks according to their accounts priviledges.
+                        <SecondaryButton style={mybtn}>View Demo</SecondaryButton>
+                        <SecondaryButton style={mybtn}>View Code</SecondaryButton>
                         </p>
-                        <p className='body'>
-                        I created the project using PHP and MSQL for backend logic and HTML,CSS,Bootstrap and JS for frontend.
-                        </p>
+                        
+                       
+                        
                     </div>
                     </ServicesCard>
                     <ServicesCard >
                     <div className="s2">
-                        <center><h3>Back-End Development</h3></center>
+                        <center><h3 style={h33}>Primary school Student Information Management System</h3></center>
+                        <img src={pry} alt='uni' style={imgs}></img>
                         <p className='body'>
                             I work well with MYSQL databases and PHP language for backend development. I create Scalable apps that are easy to ready and add modules. With my deep analytical skills, am able to break down big chunks of data to small manageable modules from which a whole application can  be built.
-                           
+                            <SecondaryButton style={mybtn}>View Demo</SecondaryButton>
+                        <SecondaryButton style={mybtn}>View Code</SecondaryButton>
                         </p>
                     </div>
                     </ServicesCard>
                     <ServicesCard >
                     <div className="s2">
-                        <center><h3>UI/UX Design</h3></center>
+                  
+                        <center><h3 style={h33}>My Portofolio <br/> Website</h3></center>
+                        <img src={porto} alt='porto' style={imgs}></img>
                         <p className='body'>
                             I can create beautiful and responsive websites using ReactJs, creating good websites to advertise your business or organization. I also have basic knowledge on how SEO works so your website will easily be found on the internet. tt 
                             {/* start on creating a reusable button */}
@@ -59,8 +69,17 @@ function Portofolio(){
 
     );
 }
+const imgs={
+    width:'100%',
+    padding:'1rem'
+
+}
+const h33={
+    paddingTop:'1rem'
+}
 const mybtn={
-    marginTop:'1rem'
+    marginTop:'.5rem',
+    marginBottom:'1rem'
 }
 const StyledPortofolio=styled.div`
 maindiv{
@@ -84,7 +103,7 @@ maindiv{
 
 }
 .s2:hover{
-    transform:scale(.9);
+    transform:scale(.96);
     transition:all 3s;
 }
 .s2:hover::after{

@@ -31,9 +31,10 @@ function Services(){
                     </ServicesCard>
                     <ServicesCard >
                     <div className="s2">
-                        <center><h3>UI/UX Design</h3></center>
+                    <center><h3>.NET FRAMEWORK (C#)</h3></center>
                         <p className='body'>
-                            I can create beautiful and responsive websites using ReactJs, creating good websites to advertise your business or organization. I also have basic knowledge on how SEO works so your website will easily be found on the internet. tt 
+                            I can create desktop standalone applications and ERP systems based on a clients needs using c# programming language and MYSQL for database management.
+
                         </p>
                     </div>
                     </ServicesCard>
@@ -59,6 +60,7 @@ function Services(){
                     <div className="s2">
                         <center><h3>Web Development</h3></center>
                         <p className='body'>
+                           
                             I can create beautiful and responsive websites using ReactJs, creating good websites to advertise your business or organization. I also have basic knowledge on how SEO works so your website will easily be found on the internet.  
                         </p>
                     </div>
@@ -72,28 +74,8 @@ function Services(){
                         </p>
                     </div>
                     </ServicesCard>
-                    <ServicesCard >
-                    <div className="s2">
-                        <center><h3>UI/UX Design</h3></center>
-                        <p className='body'>
-                            I can create beautiful and responsive websites using ReactJs, creating good websites to advertise your business or organization. I also have basic knowledge on how SEO works so your website will easily be found on the internet. tt 
-                        </p>
-                    </div>
-                    </ServicesCard>
-                
-                    {/* <div className="s2">
-                        <center><h3>Back-end Development</h3></center>
-                        <p className='body'>
-                            I can create beautiful and responsive websites using ReactJs, creating good websites to advertise your business or organization. I also have basic knowledge on how SEO works so your website will easily be found on the internet.  
-                        </p>
-                    </div>
-                
-                    <div className="s2">
-                        <center><h3>Back-end Development</h3></center>
-                        <p className='body'>
-                            I can create beautiful and responsive websites using ReactJs, creating good websites to advertise your business or organization. I also have basic knowledge on how SEO works so your website will easily be found on the internet.  
-                        </p>
-                    </div> */}
+                    
+                  
                 
             </maindiv>
         </StyledServices>
@@ -122,11 +104,11 @@ maindiv{
 
 }
 .s2:hover{
-    transform:scale(.9);
+    transform:scaleY(1.07);
     transition:all 3s;
 }
 .s2:hover::after{
-    transform:scale(.9);
+    transform:scaleY(.9);
     transition:all 3s;
 }
 h3{
