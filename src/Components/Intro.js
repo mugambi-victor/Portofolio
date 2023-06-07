@@ -1,6 +1,6 @@
 import React from 'react';
 import { styled } from 'styled-components';
-import SecondaryButton from './SecondaryButton';
+// import SecondaryButton from './SecondaryButton';
 import bg from '../img/bg.jpg';
 import {FaInstagram} from 'react-icons/fa';
 import {FaFacebook} from 'react-icons/fa';
@@ -23,7 +23,7 @@ function Intro(){
             </About>
             <Pic>
                 
-                <img src={bg}></img>
+                <img src={bg} alt="img"></img>
                 <Ics>
                     <ul>
                         <li> <FaInstagram style={ico}/></li>
@@ -83,18 +83,17 @@ p{
 }
 
 @media(max-width:992px){
-    margin-top: 15rem;
+    margin-top: 8rem;
 display:block;
 height:auto;
 
 width:100%;
-justify-content:center;
 }
 
 `
 const About=styled.div`
 width:100%;
-padding:2rem;
+padding:.8rem;
 font-size: 1rem;
 align-items:center;
 justify-content: center;
@@ -104,7 +103,7 @@ width:100%;
 justify-content:center;
 img{
     height:90%;
-    width:70%;
+    width:80%;
     border-radius: 300px;
 }
 

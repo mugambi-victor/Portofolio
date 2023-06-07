@@ -1,13 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { styled } from 'styled-components';
 //  for importing icons
 import {FaLaptopCode} from 'react-icons/fa';
-
-
+import {FaList} from 'react-icons/fa';
+import { AiFillCloseCircle} from "react-icons/ai";
+import {AiFillCloseSquare} from "react-icons/ai";
 
 
 function Header(){
-  
+    const [isHidden, setIsHidden] = useState(false);
+
+    function toggleHidden() {
+      setIsHidden(!isHidden);
+    }
     
     return(
         <StyledHeader>
@@ -18,21 +23,31 @@ function Header(){
                 </span>
                 <h1>Mugambi Technologies</h1>
               </Logo>
-              <Nav>
+              <button onClick={toggleHidden}>
+        {isHidden ? [<FaList size={30} style={ai}/>] : [<AiFillCloseSquare size={30} style={ai}/>]}
+      </button>
+              {!isHidden && <Nav>
+              
               
                 <span> <a href="#">Home</a></span>
-                <span> <a href="#">Services</a></span>
-                <span><a href="#">Projects</a>  </span>
+                <span> <a href="#services">Services</a></span>
+                <span><a href="#myporto">Projects</a>  </span>
                 <span>  <a href="#">Portofolio</a> </span>
                 
-               
-              </Nav>
+                
+                </Nav>}
+              
              
           
             
         </StyledHeader>
     );
 }
+const ai={
+color:'green',
+
+}
+
 const StyledHeader=styled.header`
 height:auto;
 
@@ -45,13 +60,22 @@ padding: 1.5rem 0.5em;
 position:fixed;
 width:100%;
 top:0;
+
+button{
+    visibility:hidden;
+}
 @media(max-width:992px){
-    
+    button{
+    background-color:#152238;
+    visibility:visible;
+}
 display:block;
 height:auto;
 
 }
-`;
+
+`
+
 
 const Logo=styled.div`
 display:flex;
@@ -97,8 +121,9 @@ a{
 
 
 @media(max-width:992px){
-    
-   a{
+       
+
+  a{
     position:absolute;
     float:none;
     left:0;
@@ -107,8 +132,8 @@ a{
     flex-direction: column;
     width:100%;
     height:100%;
-    }
-   
+    } 
+    
    
    
    

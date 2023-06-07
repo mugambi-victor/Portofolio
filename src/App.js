@@ -12,6 +12,7 @@ function App(){
             <Intro/>
             <Services />
             <Portofolio/>
+           
             </InnerLayout>
             
         </div>
