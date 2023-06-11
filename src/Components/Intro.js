@@ -70,7 +70,7 @@ ul{
 }
 `
 const StyledIntro=styled.div`
-margin-top: 7rem;
+margin-top: 15rem;
 height:30rem;
 width:100%;
 display:flex;
@@ -83,7 +83,7 @@ p{
 }
 
 @media(max-width:992px){
-    margin-top: 12rem;
+    margin-top: 10rem;
 display:block;
 height:auto;
 
