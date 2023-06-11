@@ -83,7 +83,7 @@ p{
 }
 
 @media(max-width:992px){
-    margin-top: 8rem;
+    margin-top: 12rem;
 display:block;
 height:auto;
 
