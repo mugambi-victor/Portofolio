@@ -2,7 +2,7 @@ import React from 'react';
 import { styled } from 'styled-components';
 // import SecondaryButton from './SecondaryButton';
 import bg from '../img/bg.jpg';
-import {FaInstagram} from 'react-icons/fa';
+import {FaInstagram, FaLinkedin} from 'react-icons/fa';
 import {FaFacebook} from 'react-icons/fa';
 import {FaGithub} from 'react-icons/fa';
 import {FaYoutube} from 'react-icons/fa';
@@ -26,10 +26,10 @@ function Intro(){
                 <img src={bg} alt="img"></img>
                 <Ics>
                     <ul>
-                        <li> <FaInstagram style={ico}/></li>
-                        <li><FaFacebook style={ico}/></li>
-                        <li><FaGithub style={ico}/></li>
-                        <li><FaYoutube style={ico}/></li>
+                       
+                        <li> <a href='https://github.com/mugambi-victor'> <FaGithub style={ico}/></a></li>
+                        <li> <a href='https://www.linkedin.com/in/victor-mugambi-18bb87203/'> <FaLinkedin style={ico}/></a></li>
+                        <li> <a href='https://www.youtube.com/channel/UCSDPNMuHts7TYWh8X-zfJQw'> <FaYoutube style={ico}/></a></li>
                         <li><FaEnvelope style={ico}/></li>
                     </ul>
                     
