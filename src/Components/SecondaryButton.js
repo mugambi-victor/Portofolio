@@ -22,7 +22,9 @@ border:0;
 
 }
 button:hover{
-    opacity:.8;
+    /* background-color:whitesmoke;
+    color:#152238; */
+    transform: scale(1.1);
 }
 
 `

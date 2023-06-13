@@ -5,7 +5,7 @@ import {FaLaptopCode} from 'react-icons/fa';
 import {FaList} from 'react-icons/fa';
 import { AiFillCloseCircle} from "react-icons/ai";
 import {AiFillCloseSquare} from "react-icons/ai";
-
+import {FaAlignJustify} from "react-icons/fa";
 
 function Header(){
     const [isHidden, setIsHidden] = useState(false);
@@ -24,7 +24,7 @@ function Header(){
                 <h1>Mugambi Technologies</h1>
               </Logo>
               <button onClick={toggleHidden}>
-        {isHidden ? [<FaList size={30} style={ai}/>] : [<AiFillCloseSquare size={30} style={ai}/>]}
+        {isHidden ? [<FaAlignJustify size={30} style={ai}/>] : [<AiFillCloseSquare size={30} style={ai}/>]}
       </button>
               {!isHidden && <Nav>
               
@@ -44,7 +44,8 @@ function Header(){
     );
 }
 const ai={
-color:'green',
+color:'white',
+
 
 }
 

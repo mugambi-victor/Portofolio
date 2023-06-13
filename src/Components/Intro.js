@@ -53,6 +53,10 @@ const Ics=styled.div`
  display:block;
  float:right;
 margin-top: 5rem;
+li a{
+    list-style:none;
+    color:black;
+}
 li:hover{
     transform:scale(1.2);
 }
