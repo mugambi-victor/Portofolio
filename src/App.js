@@ -4,6 +4,7 @@ import Intro from"./Components/Intro";
 import Services from "./Components/Services";
 import { InnerLayout } from "./Styles/Layouts";
 import Portofolio from "./Components/Portofolio";
+import Foots from "./Components/Foots";
 function App(){
     return(
         <div className="App">
@@ -14,7 +15,7 @@ function App(){
             <Portofolio/>
            
             </InnerLayout>
-            
+            <Foots/>
         </div>
     );
 }

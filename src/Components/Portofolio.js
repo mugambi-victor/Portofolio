@@ -6,6 +6,7 @@ import uni from "../img/uni.png";
 import pry from "../img/pry.png";
 import porto from "../img/porto.png";
 import Card from './Card';
+import feemgt from "../img/feemgt.png";
 
 function Portofolio(){
     return(
@@ -18,7 +19,7 @@ function Portofolio(){
             </center>
            </div>
             <maindiv>
-            
+            <div className='row'>
             <Card
             title='University Student IMS'
             imageurl={uni}
@@ -53,17 +54,28 @@ function Portofolio(){
             >
             </Card>
             <Card
-            title='My Portofolio website'
-            imageurl={porto}
+            title='FEE MANAGEMENT SYSTEM IN C#'
+            imageurl={feemgt}
             body={[
                 <p>
-                    This is my Portofolio website, which I developed when I was learning Reactjs. It was a great experience, creating components, using Styled components, using props for code reuse.
-                </p>
+                    This is a software solution developed for a primary school to aid in managing student finance across their time in school.
+                </p>,
+                <p>
+                    The software will help administration track finance of students easily while aiding easy retrieval also in the process.
+                </p>,
+                <p>
+                <SecondaryButton><a href='https://youtu.be/XdMh9KmWHDc'>View Demo</a></SecondaryButton></p>
             ]}
             >
             </Card>
+            
+          </div>
+          <div className='row>'>
           
+          </div>
+
             </maindiv>
+            
             
         </StyledPortofolio>
 
@@ -82,15 +94,23 @@ function Portofolio(){
 // }
 const StyledPortofolio=styled.div`
 maindiv{
-    display:flex;
+    display:block;
     gap:1rem;
     margin-top: 1rem;
+    
     @media(max-width: 992px){
     display:block;
     
     margin-top:2rem;
     
 }
+.row{
+    display:flex;
+    width:100%;
+justify-content:space-between;
+
+
+    }
 a{
     text-decoration: none;
     color:white;

@@ -7,19 +7,23 @@ import {FaFacebook} from 'react-icons/fa';
 import {FaGithub} from 'react-icons/fa';
 import {FaYoutube} from 'react-icons/fa';
 import {FaEnvelope} from 'react-icons/fa';
+import SecondaryButton from './SecondaryButton';
+import { AiFillPhone } from "react-icons/ai";
 function Intro(){
     return(
         <StyledIntro>
            
             <About>
-                <p>Hi, My name is Victor Mugambi, a professional web developer. I use ReactJs to build beautiful and interactive user interfaces. I am also a passionate back end developer using PHP and MYSQL for databases. 
-                   
+                <p>Hi, My name is Victor Mugambi, a professional web developer with a Bachelor of Science in Information Technology from Zetech University, Kenya. I am passionate about development because I believe effective software give resourceful infomation that help businesses grow and allow owners make informed decisions.
+                </p>
+                <p>
+                I am conversant with Reactjs, Bootstrap, HTML, Css, Javascript, Nodejs, Php, Mysql and C# languages used in application and web development.
                 </p>
                 <p>
                 Whether you are looking to upgrade your website or start a new project, i am the right pick for you. Contact me today, lets get started on your Project.
                 </p>
                
-                
+                <SecondaryButton style={bt}><AiFillPhone style={ico2}/> +254740843795</SecondaryButton>
             </About>
             <Pic>
                 
@@ -46,6 +50,16 @@ function Intro(){
 const ico={
     fontSize:'2rem',
 
+    
+}
+const ico2={
+    fontSize:'1rem',
+
+    
+}
+const bt={
+    display:'flex',
+    float:'right',
     
 }
 
