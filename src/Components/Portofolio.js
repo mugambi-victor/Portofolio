@@ -108,7 +108,12 @@ maindiv{
     display:flex;
     width:100%;
 justify-content:space-between;
-
+@media(max-width: 992px){
+    display:block;
+    
+    margin-top:2rem;
+    
+}
 
     }
 a{

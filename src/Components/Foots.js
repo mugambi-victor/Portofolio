@@ -61,7 +61,12 @@ padding-bottom:3em;
     margin-left:5em;
     font-size:1.4em;
 }
-
+@media(max-width: 992px){
+    display:block;
+    
+    margin-top:2rem;
+    
+}
 `
 const Styledp=styled.section`
 width:30em;
@@ -80,6 +85,20 @@ padding-left:3em;
  
     
 }
+@media(max-width: 992px){
+    display:block;
+    padding-left: 1em;
+    margin-top:2rem;
+    .ins{
+    padding:.5em;
+    width:27em;
+    border:0;
+    border-bottom:1px solid;
+    margin: 0.6em;
+ 
+    
+}
+}
 
 .bt{
     margin-left:12em; 
@@ -96,4 +115,9 @@ padding-left: 2em;
 margin-top:2.5em;
     width:20em;
     font-size:1.8em;
+    @media(max-width: 992px){
+  
+        font-size:1.2em;
+    
+}
 `
