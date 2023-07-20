@@ -110,6 +110,9 @@ padding-left:3em;
 color:white;
 
 border:0;
+@media(max-width: 992px){
+  float:center;
+}
 }
 `
 const StyledHeader=styled.div`
