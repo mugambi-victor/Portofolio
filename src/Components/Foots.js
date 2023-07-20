@@ -111,7 +111,8 @@ color:white;
 
 border:0;
 @media(max-width: 992px){
-  float:center;
+    display: flex;
+  justify-content:center;
 }
 }
 `
