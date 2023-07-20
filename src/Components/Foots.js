@@ -87,14 +87,14 @@ padding-left:3em;
 }
 @media(max-width: 992px){
     display:block;
-    padding-left: 1em;
-    margin-top:2rem;
+    padding-left:.5em;
+    margin-top:1rem;
     .ins{
     padding:.5em;
-    width:27em;
+    width:100%;
     border:0;
     border-bottom:1px solid;
-    margin: 0.6em;
+   
  
     
 }
