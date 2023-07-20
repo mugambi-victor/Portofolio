@@ -63,7 +63,7 @@ padding-bottom:3em;
 }
 @media(max-width: 992px){
     display:block;
-    
+    width:100%;
     margin-top:2rem;
     
 }
@@ -87,11 +87,12 @@ padding-left:3em;
 }
 @media(max-width: 992px){
     display:block;
+    width:100%;
     padding-left:.5em;
     margin-top:1rem;
     .ins{
     padding:.5em;
-    width:27em;
+    width:90%;
     border:0;
     display:flex;
     justify-content: center;
@@ -115,11 +116,11 @@ const StyledHeader=styled.div`
 
 padding-left: 2em;
 margin-top:2.5em;
-    width:20em;
+    width:100%;
     font-size:1.8em;
     @media(max-width: 992px){
   
-        font-size:1.2em;
+        font-size:1.1em;
     
 }
 `
