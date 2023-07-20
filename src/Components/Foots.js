@@ -91,8 +91,10 @@ padding-left:3em;
     margin-top:1rem;
     .ins{
     padding:.5em;
-    width:100%;
+    width:27em;
     border:0;
+    display:flex;
+    justify-content: center;
     border-bottom:1px solid;
    
  
