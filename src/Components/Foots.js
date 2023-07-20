@@ -111,8 +111,8 @@ color:white;
 
 border:0;
 @media(max-width: 992px){
-    display: flex;
-  justify-content:center;
+    margin-left:1em;
+    margin-top:-3em;
 }
 }
 `
