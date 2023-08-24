@@ -8,7 +8,7 @@ import {AiFillCloseSquare} from "react-icons/ai";
 import {FaAlignJustify} from "react-icons/fa";
 
 function Header(){
-    const [isHidden, setIsHidden] = useState(false);
+    const [isHidden, setIsHidden] = useState(true);
 
     function toggleHidden() {
       setIsHidden(!isHidden);

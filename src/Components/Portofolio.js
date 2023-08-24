@@ -112,6 +112,8 @@ justify-content:space-between;
     display:block;
     
     margin-top:2rem;
+    margin-left:0;
+    margin-right: 0;
     
 }
 

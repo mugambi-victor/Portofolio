@@ -11,12 +11,12 @@ function SecondaryButton({children,style}){
 }
 
 const StyledButton=styled.div`
-
+margin-left: -1em;
 
 button{
     background-color:#152238;
     padding:.4rem;
-color:white;
+    color:white;
 
 border:0;
 
