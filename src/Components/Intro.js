@@ -1,72 +1,159 @@
 import React from 'react';
 import { styled } from 'styled-components';
-// import SecondaryButton from './SecondaryButton';
 import bg from '../img/bg.jpg';
-import {FaInstagram, FaLinkedin} from 'react-icons/fa';
-import {FaFacebook} from 'react-icons/fa';
-import {FaGithub} from 'react-icons/fa';
-import {FaYoutube} from 'react-icons/fa';
-import {FaEnvelope} from 'react-icons/fa';
+import {
+  FaInstagram,
+  FaLinkedin,
+  FaFacebook,
+  FaGithub,
+  FaYoutube,
+  FaEnvelope,
+  FaPhone
+} from 'react-icons/fa';
 import SecondaryButton from './SecondaryButton';
-import { AiFillPhone } from "react-icons/ai";
-function Intro(){
-    return(
-        <StyledIntro>
-           
-            <About>
-                <p>Hi, My name is Victor Mugambi, a professional web developer with a Bachelor of Science in Information Technology from Zetech University, Kenya. I am passionate about development because I believe effective software give resourceful infomation that help businesses grow and allow owners make informed decisions.
-                </p>
-                <p>
-                I am conversant with Reactjs, Bootstrap, HTML, Css, Javascript, Nodejs, Php, Mysql and C# languages used in application and web development.
-                </p>
-                <p>
-                Whether you are looking to upgrade your website or start a new project, i am the right pick for you. Contact me today, lets get started on your Project.
-                </p>
-               
-                <SecondaryButton style={bt}><AiFillPhone style={ico2}/> +254740843795</SecondaryButton>
-            </About>
-            <Pic>
-                
-                <img src={bg} alt="img"></img>
-                <Ics>
-                    <ul>
-                       
-                        <li> <a href='https://github.com/mugambi-victor'> <FaGithub style={ico}/></a></li>
-                        <li> <a href='https://www.linkedin.com/in/victor-mugambi-18bb87203/'> <FaLinkedin style={ico}/></a></li>
-                        <li> <a href='https://www.youtube.com/channel/UCSDPNMuHts7TYWh8X-zfJQw'> <FaYoutube style={ico}/></a></li>
-                        <li><FaEnvelope style={ico}/></li>
-                    </ul>
-                    
-                   
-                {/* <span><SecondaryButton/></span> */}
-                </Ics>
-               
-            </Pic>
-            
-        </StyledIntro>
-
-    );
-}
-const ico={
-    fontSize:'2rem',
-
-    
-}
-const ico2={
-    fontSize:'1rem',
-
-    
-}
-const bt={
-    display:'flex',
-    float:'right',
-    
+function Intro() {
+  return (
+    <StyledIntro>
+      <div className='int-header'>
+        <p className='the-head'>WEB DEVELOPER | SOFTWARE DEVELOPER | CONSULTANT</p>
+      </div>
+      <About>
+        <Pic>
+          <div className='int-header'>
+            <div className='with-bt'>
+              <h4>Bring Your brand to life with our help</h4>
+            <SecondaryButton >Contact Me: 0740843795</SecondaryButton>
+            </div>
+          </div>
+          <img src={bg} alt='my Image' />
+          <SocialMediaLinks />
+        </Pic>
+        
+      </About>
+    </StyledIntro>
+  );
 }
 
+const icoStyles = {
+  fontSize: '2rem',
+};
+
+const StyledIntro = styled.div`
+  margin-top: 3rem;
+  height: 30rem;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  .the-head {
+    font-size: 1rem;
+    color: #0036ab;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+
+  .int-header {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+
+  h4 {
+    width: 70%;
+    font-size: 2rem;
+    font-family: monospace;
+    margin-right:-13rem;
+  }
+
+  @media (max-width: 992px) {
+  
+    display: block;
+    height: auto;
+    width: 100%;
+    h4 {
+    width: 100%;
+    font-size: 2rem;
+    font-family: monospace;
+   
+  }
+  }
+
+`;
+
+const About = styled.div`
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  align-items: center;
+  justify-content: justify;
+  line-height: 2;
+  @media(max-width:997px){
+    display:flex;
+    flex-direction: column;
+  }
+`;
+
+const Pic = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+.with-bt{
+  display:block;
+  float:right;
+}
+  img {
+    width: 35%;
+    border-radius: 15rem;
+  }
+
+  @media (max-width: 997px) {
+    display: flex;
+    justify-content: center;
+flex-direction:column;
+    img {
+      width: 100%;
+    border-radius: 15rem;
+      margin-top: 1rem;
+     
+    }
+  }
+`;
+
+const SocialMediaLinks = () => (
+  <Ics>
+    <h5>Social Media Links</h5>
+    <ul>
+      <li>
+        <a href='https://github.com/mugambi-victor'>
+          <FaGithub style={icoStyles} />
+        </a>
+      </li>
+      <li>
+        <a href='https://www.linkedin.com/in/victor-mugambi-18bb87203/'>
+          <FaLinkedin style={icoStyles} />
+        </a>
+      </li>
+      <li>
+        <a href='https://www.youtube.com/channel/UCSDPNMuHts7TYWh8X-zfJQw'>
+          <FaYoutube style={icoStyles} /> 
+        </a>
+      </li>
+      <li>
+      
+      </li>
+      <li>
+        <a>
+          <FaEnvelope style={icoStyles} />
+        </a>
+      </li>
+    </ul>
+  </Ics>
+);
 const Ics=styled.div`
  display:block;
  float:right;
-margin-top: 5rem;
+margin-top: 3rem;
+margin-left: 5rem;
 li a{
     list-style:none;
     color:black;
@@ -86,44 +173,5 @@ ul{
     }
    margin-top:2rem
 }
-`
-const StyledIntro=styled.div`
-margin-top: 7rem;
-height:30rem;
-width:100%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-
-p{
-    padding-bottom:1em;
-    font-size:1rem;
-}
-
-@media(max-width:992px){
-    margin-top: 15rem;
-display:block;
-height:auto;
-
-width:100%;
-}
-
-`
-const About=styled.div`
-width:100%;
-padding:.8rem;
-font-size: 1rem;
-align-items:center;
-justify-content: center;
-`
-const Pic=styled.div`
-width:100%;
-justify-content:center;
-img{
-    height:90%;
-    width:80%;
-    border-radius: 300px;
-}
-
 `
 export default Intro;

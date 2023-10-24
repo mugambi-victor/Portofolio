@@ -97,12 +97,15 @@ maindiv{
     display:block;
     gap:1rem;
     margin-top: 1rem;
-    
+   
     @media(max-width: 992px){
     display:block;
     
     margin-top:2rem;
     
+}
+p{
+    line-height:2;
 }
 .row{
     display:flex;

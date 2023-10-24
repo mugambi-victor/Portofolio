@@ -5,7 +5,7 @@ function ServicesCard(props) {
   return (
     <Styledddiv className='card-container'>
      <div>
-      <h1>{props.icon}{props.title}</h1>
+      <h1>{props.icon}   {props.title}</h1>
       {/* <img src={props.imageurl} alt='img'/> */}
       <p>{props.body}</p>
       </div>
@@ -26,8 +26,8 @@ div{
   padding:1rem;
 }
 div:hover{
-  transform:scale(1.1);
-
+ // transform:scale(1.01);
+background-color: white;
   
 }
 h1{

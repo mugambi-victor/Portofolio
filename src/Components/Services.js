@@ -11,14 +11,13 @@ function Services(){
          
            <div>
            <center><h1  >My Services</h1>
-            <p>I give the best Services when it comes to: </p>
             </center>
            </div>
             <maindiv>
             <ServicesCard
             icon={<FaCode/>}
             title=' Web Development'
-            body=' I can create websites using Bootstrap, Css, JS and ReactJs. These langauges and libraries  enable me to create beautiful user interfaces for applications and websites. I believe in continous learning and am still honing  my front end skills. I have basic knowledge on how SEO works so your website will easily be found on the internet.  '
+            body=' I create websites using Bootstrap, Css, JS and ReactJs. These langauges and libraries  enable me to create beautiful user interfaces for applications and websites. I believe in continous learning and am still honing  my front end skills. I have basic knowledge on how SEO works so your website will easily be found on the internet. '
             ></ServicesCard>
                 
                     <ServicesCard 
@@ -57,7 +56,7 @@ function Services(){
 const StyledServices=styled.div`
 margin-top:5rem;
 background-color:whitesmoke;
-padding:2rem;
+padding:.5rem;
 margin-bottom: 5rem;
 maindiv{
     display:flex;
@@ -68,6 +67,9 @@ maindiv{
     margin-top:3rem;
     
 }
+}
+p{
+    line-height:2;
 }
 
 `

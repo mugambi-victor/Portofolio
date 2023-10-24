@@ -70,7 +70,7 @@ const StyledAlert = styled.div`
 
 const StyledFooter=styled.section`
 * {box-sizing:border-box;}
-box-shadow: 10px 12px 12px 11px rgba(2, 2, 0, 0.2);
+box-shadow: 10px 12px 12px 11px rgba(.7, .7, 0, 0.2);
 background-color:whitesmoke;
 
 div{

@@ -8,7 +8,7 @@ import {AiFillCloseSquare} from "react-icons/ai";
 import {FaAlignJustify} from "react-icons/fa";
 
 function Header(){
-    const [isHidden, setIsHidden] = useState(true);
+    const [isHidden, setIsHidden] = useState(false);
 
     function toggleHidden() {
       setIsHidden(!isHidden);
@@ -16,18 +16,15 @@ function Header(){
     
     return(
         <StyledHeader>
-           
+        
               <Logo>
-                <span>
-                    <FaLaptopCode/>
-                </span>
-                <h1>Mugambi Technologies</h1>
+                <h1>Victor Mugambi</h1>
               </Logo>
               <button onClick={toggleHidden}>
         {isHidden ? [<FaAlignJustify size={30} style={ai}/>] : [<AiFillCloseSquare size={30} style={ai}/>]}
       </button>
+      
               {!isHidden && <Nav>
-              
               
                 <span> <a href="#">Home</a></span>
                 <span> <a href="#services">Services</a></span>
@@ -51,14 +48,12 @@ color:'white',
 
 const StyledHeader=styled.header`
 height:auto;
-
-background-color:#152238;
 justify-content:space-between;
 display:flex;
 align-items:center;
 margin:0 auto;
 padding: 1.5rem 0.5em;
-position:fixed;
+
 width:100%;
 top:0;
 
@@ -69,9 +64,12 @@ button{
     button{
     background-color:#152238;
     visibility:visible;
+    margin-top: 15px;
+    height:50px;
 }
 display:block;
 height:auto;
+
 
 }
 
@@ -89,7 +87,7 @@ span{
 }
 h1{
     font-weight:600;
-    color:white;
+   
 }
 
 `;
@@ -101,10 +99,9 @@ span{
     margin-right:2rem;
 
 a{
-    
+    color:black;
     text-decoration: none;
     font-weight: 400;
-    color:white;
     position:relative;
     font-size:1rem;
     transition: .5 ease-in-out;
