@@ -17,7 +17,7 @@ button{
     background-color:#152238;
     padding:.4rem;
     color:white;
-
+    border-radius: .2rem;
 border:0;
 
 }

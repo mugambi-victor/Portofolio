@@ -15,14 +15,16 @@ function Header(){
     }
     
     return(
-        <StyledHeader>
-        
-              <Logo>
+        <StyledHeader >
+          <div style={{display:'flex', justifyContent:'space-between'}}>
+          <Logo>
                 <h1>Victor Mugambi</h1>
               </Logo>
-              <button onClick={toggleHidden}>
+              <button onClick={toggleHidden} >
         {isHidden ? [<FaAlignJustify size={30} style={ai}/>] : [<AiFillCloseSquare size={30} style={ai}/>]}
       </button>
+          </div>
+              
       
               {!isHidden && <Nav>
               
@@ -69,7 +71,8 @@ button{
 }
 display:block;
 height:auto;
-
+padding-left:1.5rem;
+padding-right:1.5rem;
 
 }
 

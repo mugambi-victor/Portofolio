@@ -15,7 +15,7 @@ function Intro() {
   return (
     <StyledIntro>
       <div className='int-header'>
-        <p className='the-head'>WEB DEVELOPER | SOFTWARE DEVELOPER | CONSULTANT</p>
+        <p className='the-head'>WEB DEVELOPER || SOFTWARE DEVELOPER || CONSULTANT</p>
       </div>
       <About>
         <Pic>
@@ -56,6 +56,9 @@ const StyledIntro = styled.div`
     display: flex;
     justify-content: center;
     margin-top: 3rem;
+    @media(max-width:997px){
+     padding:1rem;
+    }
   }
 
   h4 {

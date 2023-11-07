@@ -55,7 +55,7 @@ function Services(){
 }
 const StyledServices=styled.div`
 margin-top:5rem;
-background-color:whitesmoke;
+
 padding:.5rem;
 margin-bottom: 5rem;
 maindiv{
